@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000000;
+    scroll-behavior: smooth; 
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
