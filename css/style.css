@@ -5,11 +5,12 @@
 */
 
 html {
-  background-color: #000000;
+  background-color: #ffffff;
   scroll-behavior: smooth; 
 }
 
 body {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,8 +22,14 @@ body {
   margin: 0 auto;
 }
 
+.h2 {
+  background-color: #fff;
+}
+
+/* header style start */
+
 .header_wrapper {
-  background-color: #1c1c1c;
+  background-color: #0c0c0e;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -37,16 +44,17 @@ body {
 .header {
   height: 90px;
 }
+
 .header-title {
   width: 294px;
   height: 50px;
-  color: #FFF;
+  color: #ffffff;
   font-family: Forum;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: 50px; /* 166.667% */
-  letter-spacing: 0.6px;
+  letter-spacing: 0.02em;
   margin-left: 20px;
 }
 
@@ -80,7 +88,7 @@ body {
 }
 
 .nav-item a {
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -93,16 +101,74 @@ body {
   text-decoration: underline;  
 }
 
-.h2 {
-  background-color: #fff;
-}
-
 .icon_profile {
   width: 28px;
   height: 28px;
   flex-shrink: 0;
   padding: 31 20 31 0;
 }
+
+/* header style end */
+
+/* section welcome style start */
+
+.welcome_wrapper_overlay  {
+  display: grid;
+  height: 600px;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(12,12,14,1) 1%, rgba(12,12,14,0.2) 40%);
+
+}
+
+.welcome_wrapper {
+  display: grid;
+  height: 600px;
+  align-items: center;
+  background: url(../assets/welcome.png), lightgray 50% / cover no-repeat;
+}
+
+.welcome_bg {
+  width: 600px;
+  height: 220px;
+  flex-shrink: 0;
+  background: #0c0c0e;
+  margin-top: 60px;
+}
+
+.welcome_title_wrapper {
+  width: 520px;
+  height: 150px;
+  padding: 35 40 35 40;
+  
+}
+
+.welcome_title {
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.welcome_title_w {
+  margin: 0;
+  padding-right: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+/* section welcome style end */
 
 @font-face {
   font-family: Forum;
