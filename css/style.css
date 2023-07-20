@@ -6,11 +6,11 @@
 
 html {
   background-color: #ffffff;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 body {
-  overflow: hidden;
+    /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -169,6 +169,110 @@ body {
   text-transform: uppercase;
 }
 /* section welcome style end */
+
+/* section about style start */
+
+.about_h2 {
+color: #0C0C0E;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 0px;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 100% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+.hr_about {
+  width: 50px;
+  height: 1px;
+  margin-top: 20px;
+  align-items: center;
+  flex-shrink: 0;
+  background: #0C0C0E;
+}
+
+.about_text {
+  color: #000;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 18px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+}
+
+.image_items {
+  align-items: center;
+}
+
+.image_item {
+  width: 450px;
+  height: 560px;
+  flex-shrink: 0;
+
+}
+
+.image_item:first-child {
+  width: 450px;
+  height: 560px;
+  flex-shrink: 0;
+  margin-left: 20px;
+  margin-right: 21px;
+}
+
+.image_item:last-child {
+  width: 450px;
+  height: 560px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-left: 21px;
+}
+
+.paginations_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 31px;
+}
+
+.paginations {
+  display: flex;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  cursor: pointer; 
+}
+  
+.carousel_pagination_1{
+  background: #BB945F;
+  border-radius: 10px;
+  margin: 5px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  }
+
+.carousel_pagination{
+  align-items: center;
+  background: #0C0C0E;
+  border-radius: 10px;
+  margin: 5px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.carousel_pagination:hover{
+  background: #BB945F;
+  }
+
+/* section about style end */
 
 @font-face {
   font-family: Forum;
