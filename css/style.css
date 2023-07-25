@@ -198,8 +198,7 @@ text-transform: capitalize;
 .about_text {
   color: #000;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 18px;
+  margin-top: 38px;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -208,36 +207,39 @@ text-transform: capitalize;
 }
 
 .image_items {
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 35px;
+
 }
 
 .image_item {
+  flex-wrap: wrap;
   width: 450px;
   height: 560px;
   flex-shrink: 0;
-
 }
 
-.image_item:first-child {
-  width: 450px;
-  height: 560px;
-  flex-shrink: 0;
-  margin-left: 20px;
-  margin-right: 21px;
+.image_items_wrapper {
+  padding: 0;
 }
 
-.image_item:last-child {
-  width: 450px;
-  height: 560px;
-  flex-shrink: 0;
-  margin-right: 20px;
-  margin-left: 21px;
+.image_items_wrapper:first-child {
+  padding-left: 20px;
+  padding-right: 25px;
 }
+
+.image_items_wrapper:last-child {
+  padding-left: 25px;
+  padding-right: 20px;
+}
+
 
 .paginations_wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 31px;
+  padding-bottom: 30px;
 }
 
 .paginations {
