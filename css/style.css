@@ -405,11 +405,161 @@ input:hover {
   line-height: normal; 
 }
 
+.books_main {
+  margin-top: 40px;
+}
+
+.books_line1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 41px;
+}
+
+.books_line2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book_wrapper {
+  position: relative;
+  width: 590px;
+  height: 555px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.book_img {
+  position: absolute;
+  right: 20px;
+  bottom: -2px;
+}
+
+.book_main {
+  width: 550px;
+  height: 555px;
+  border: 1px solid #000;
+}
+
+.book_cat {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding-left: 19px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.book_cat::after {
+  width: 60px;
+  height: 1px;
+  display: block;
+  position: relative;
+  bottom: 1px;
+  flex-shrink: 0;
+  content: '';
+  background: #BB945F;
+}
+
+.book_name {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 19px;
+  padding-top: 18px;
+  margin: 0;
+}
+
+.book_autor {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding-left: 19px;
+  margin: 0;
+}
+
+.book_text {
+  width: 357px;
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding-left: 19px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.book_button {
+  position: absolute;
+  left: 40px;
+  bottom: 15px;
+}
+
+.buy {
+  width: 75px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #0C0C0E;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.buy:hover {
+  border: 1px solid #BB945F;
+  background: #BB945F;
+}
+
+.own {
+  width: 75px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid #BB945F;
+  color: #BB945F;
+  background-color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
 /* section favorites style end */
 
 /* coffeeshop style start */
 
-.cofeeshop_h2 {
+.coffeeshop {
+  padding-top: 26px;
+}
+
+.coffeeshop_h2 {
   color: #0C0C0E;
   text-align: center;
   font-family: Forum;
