@@ -135,9 +135,12 @@ body {
 
 .welcome_wrapper {
   display: grid;
+  width: 100%;
   height: 600px;
   align-items: center;
   background: url(../assets/welcome.png), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .welcome_bg {
@@ -324,8 +327,30 @@ text-transform: capitalize;
 .radio_wrapper {
   padding-left: 20px;
   padding-top: 40px;
+  width: 700px;
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.radio_d {
+  width: 175px;
+  padding-right: 90px;
+}
+
+.radio_dwin {
+  width: 104px;
+}
+
+.radio_dspr {
+  width: 102px;
+}
+
+.radio_dsum {
+  width: 120px;
+}
+
+.radio_daut {
+  width: 116px;
 }
 
 input {
@@ -342,8 +367,19 @@ input {
 input:checked {
   width: 17px;
   height: 17px;
-  border: 2px solid black;
-  background-color: #000;
+  background: url(../assets/svg/radio_check.svg) 0 0 no-repeat;
+  border-radius: 17px;
+  border: 0;
+}
+
+input:checked + label {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
 }
 
 input:hover {
@@ -358,6 +394,15 @@ input:hover {
   font-weight: 700;
   line-height: normal;
   padding-right: 86px;
+}
+
+.season_name1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
 }
 
 /* section favorites style end */
@@ -471,20 +516,7 @@ input:hover {
   opacity: 0.33;
 }
 
-.footer_frame_left {
-  width: 1440px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.footer_frame_right {
-  padding-right: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
 .footer_pa {
   color: #FFF;
