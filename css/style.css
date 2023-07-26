@@ -362,3 +362,52 @@ input:hover {
 
 /* section favorites style end */
 
+/* coffeeshop style start */
+
+.cofeeshop_h2 {
+  color: #0C0C0E;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+/* coffeeshop  style end */
+
+/* contacts style start */
+
+.contacts_h2 {
+  color: #0C0C0E;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+/* contacts   style end */
+
+/* librarycard style start */
+
+.librarycard_h2 {
+  color: #0C0C0E;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;  
+}
+/* librarycard   style end */
+
+/* footer style start */
+
+/* footer style end */
