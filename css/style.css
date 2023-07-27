@@ -335,22 +335,27 @@ text-transform: capitalize;
 .radio_d {
   width: 175px;
   padding-right: 90px;
+  cursor: pointer;
 }
 
 .radio_dwin {
   width: 104px;
+  cursor: pointer;
 }
 
 .radio_dspr {
   width: 102px;
+  cursor: pointer;
 }
 
 .radio_dsum {
   width: 120px;
+  cursor: pointer;
 }
 
 .radio_daut {
   width: 116px;
+  cursor: pointer;
 }
 
 input {
@@ -362,6 +367,7 @@ input {
   margin-right: 20px;
   position: relative;
   top: 4px;
+  cursor: pointer;
 }
 
 input:checked {
@@ -370,6 +376,7 @@ input:checked {
   background: url(../assets/svg/radio_check.svg) 0 0 no-repeat;
   border-radius: 17px;
   border: 0;
+  cursor: pointer;
 }
 
 input:checked + label {
@@ -379,11 +386,13 @@ input:checked + label {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
 
 }
 
 input:hover {
   background-color: #BB945F; 
+  cursor: pointer;
 }
 
 .season_name {
@@ -403,6 +412,7 @@ input:hover {
   font-style: normal;
   font-weight: 400;
   line-height: normal; 
+  cursor: pointer;
 }
 
 .books_main {
@@ -532,6 +542,7 @@ input:hover {
 .buy:hover {
   border: 1px solid #BB945F;
   background: #BB945F;
+  cursor: pointer;
 }
 
 .own {
@@ -549,6 +560,7 @@ input:hover {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 /* section favorites style end */
@@ -556,7 +568,7 @@ input:hover {
 /* coffeeshop style start */
 
 .coffeeshop {
-  padding-top: 26px;
+  padding-top: 42px;
 }
 
 .coffeeshop_h2 {
@@ -567,6 +579,132 @@ input:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.cs_text {
+  width: 1400px; 
+  padding-left: 20px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.cs_text_pi {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: none;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.menu_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coffee_menu_wrapper {
+  padding: 0 20px;
+}
+
+.coffee_menu_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.desserts_menu_wrapper {
+  padding-right: 20px;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 40px;
+}
+
+.cs_menu_title {
+  color: #BB945F;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.cs_menu_title_r {
+  color: #BB945F;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: right;
+}
+
+.cs_menu_item {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  padding-bottom: 40px;
+}
+
+.cs_menu_name {
+  width: 199px;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.cs_menu_name_r {
+  width: 240px;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: right;
+}
+
+
+.cs_menu_line::after {
+  display: block;
+  content: '';
+  width: 100px;
+  height: 1px;
+  background: #BB945F;
+}
+
+.cs_menu_price {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
   letter-spacing: 2px;
   text-transform: capitalize;
 }
