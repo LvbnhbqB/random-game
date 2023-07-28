@@ -16,7 +16,7 @@
 }
 
 html {
-  background-color: #ffffff;
+  background-color: #0C0C0E;
   scroll-behavior: smooth;
 }
 
@@ -25,12 +25,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin: 0; padding: 0;
+
 }
 
 .wrapper {
   flex-wrap: wrap;
   width: 1440px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .h2 {
