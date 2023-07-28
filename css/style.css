@@ -358,6 +358,7 @@ text-transform: capitalize;
   cursor: pointer;
 }
 
+
 input {
   appearance: none;
   border-radius: 50%;
@@ -387,13 +388,12 @@ input:checked + label {
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
-
 }
 
 input:hover {
-  background-color: #BB945F; 
   cursor: pointer;
 }
+
 
 .season_name {
   color: #000;
@@ -842,6 +842,10 @@ input:hover {
 
 /* librarycard style start */
 
+.librarycard {
+  padding-bottom: 30px;
+}
+
 .librarycard_h2 {
   color: #0C0C0E;
   text-align: center;
@@ -852,7 +856,195 @@ input:hover {
   line-height: 40px; /* 100% */
   letter-spacing: 2px;
   text-transform: capitalize;  
+  margin: 0;
+  margin-top: 72px;
 }
+
+.librarycard_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.find_library {
+  align-items: center;
+  width: 600px;
+  height: 453px;
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+
+.find_title {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.white_bg {
+  width: 600px;
+  height: 383px;
+  flex-shrink: 0;
+  border: 3px solid #BB945F;
+  background: #FFF;
+  box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.gold_bg {
+  width: 560px;
+  height: 272px;
+  flex-shrink: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  background: #BB945F;
+
+}
+
+.gold_bg_title {
+  color: #000;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 166.667% */
+  letter-spacing: 0.6px;
+  padding-left: 20px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.find_gold_name {
+  width: 520px;
+  height: 66px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 5px 0 6px 20px;
+  color: #BB945F;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+}
+
+.find_gold_name::placeholder {
+  width: 182px;
+  height: 50px;
+  color: #8E8E8E;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+}
+
+.find_gold_form {
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 18px;
+}
+
+.find_gold_form2 {
+  margin: 0;
+  padding-top: 25px;
+  padding-left: 18px;
+}
+
+
+.b_find_gold_form {
+  height: 40px;
+  margin: 0;
+  padding-top: 85px;
+}
+
+.l_find_gold_name {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.check_card {
+  width: 242px;
+  height: 44px;
+  color: #0C0C0E;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid #0C0C0E;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.chech_card_d {
+  margin: 0;
+  padding-left: 179px;
+  padding-top: 20px;
+}
+
+.check_card:hover {
+  border: 1px solid #BB945F;
+  background: #BB945F;
+  cursor: pointer;
+}
+
+.get_reader {
+  width: 456px;
+  height: 253px;
+  flex-shrink: 0;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.get_title {
+  color: #000;
+  text-align: center;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-align: right;
+}
+
+.get_text {
+  margin: 0;
+  padding-top: 5px;
+  color: #000;
+  text-align: right;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 0.4px;  
+}
+
+.get_button {
+  display: flex;
+  padding-top: 35px;
+  float: right;
+  column-gap: 20px;
+}
+
+
 /* librarycard   style end */
 
 /* footer style start */
