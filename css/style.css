@@ -834,9 +834,11 @@ input:hover {
   text-transform: capitalize;
 }
 
-.img_map {
+.map_img {
   width: 696px;
   height: 414px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 /* contacts   style end */
 
@@ -857,7 +859,7 @@ input:hover {
   letter-spacing: 2px;
   text-transform: capitalize;  
   margin: 0;
-  margin-top: 72px;
+  margin-top: 58px;
 }
 
 .librarycard_wrapper {
