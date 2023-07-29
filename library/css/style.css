@@ -92,7 +92,7 @@ body {
 }
 
 .nav-link {
-  padding: 0 15px;
+  padding: 0px 15px;
   line-height: 50px;
   transition: .3s;
 
@@ -120,7 +120,7 @@ body {
   width: 28px;
   height: 28px;
   flex-shrink: 0;
-  padding: 31 20 31 0;
+  padding: 31px 20px 31px 0px;
 }
 
 /* header style end */
@@ -156,7 +156,7 @@ body {
 .welcome_title_wrapper {
   width: 520px;
   height: 150px;
-  padding: 35 40 35 40;
+  padding: 35px 40px 35px 40px;
   
 }
 
@@ -228,7 +228,7 @@ text-transform: capitalize;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
 
 }
 
@@ -583,7 +583,7 @@ input:hover {
   line-height: 40px; /* 100% */
   letter-spacing: 2px;
   text-transform: capitalize;
-  padding-top: 20px;
+  padding-top: 18px;
   margin: 0;
 }
 
@@ -890,7 +890,7 @@ input:hover {
 }
 
 .white_bg {
-  width: 600px;
+  width: 595px;
   height: 383px;
   flex-shrink: 0;
   border: 3px solid #BB945F;
@@ -904,7 +904,7 @@ input:hover {
   width: 560px;
   height: 272px;
   flex-shrink: 0;
-  margin-left: 20px;
+  margin-left: 17px;
   margin-top: 20px;
   background: #BB945F;
 
@@ -924,12 +924,11 @@ input:hover {
 }
 
 .find_gold_name {
-  width: 520px;
-  height: 66px;
+  width: 500px;
+  height: 64px;
   border: 0px;
   border-radius: 10px;
   background-color: #fff;
-  padding: 5px 0 6px 20px;
   color: #BB945F;
   font-family: Forum;
   font-size: 30px;
@@ -937,6 +936,7 @@ input:hover {
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0.6px;
+  padding-left: 20px;
 }
 
 .find_gold_name::placeholder {
@@ -953,14 +953,14 @@ input:hover {
 
 .find_gold_form {
   margin: 0;
-  padding-top: 15px;
-  padding-left: 18px;
+  padding-top: 14px;
+  padding-left: 20px;
 }
 
 .find_gold_form2 {
   margin: 0;
   padding-top: 25px;
-  padding-left: 18px;
+  padding-left: 20px;
 }
 
 
