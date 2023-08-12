@@ -30,7 +30,7 @@ body {
 
 .wrapper {
   flex-wrap: wrap;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -1053,8 +1053,9 @@ input:hover {
 /* footer style start */
 .footer {
   padding: 0;
-  margin: 0px auto;
-  width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
   height: 250px;
   text-align: center;
   background-color: #0C0C0E;
@@ -1114,8 +1115,6 @@ input:hover {
   opacity: 0.33;
 }
 
-
-
 .footer_pa {
   color: #FFF;
   font-family: Inter;
@@ -1150,7 +1149,6 @@ input:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .col { 
