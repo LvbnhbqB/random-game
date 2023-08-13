@@ -1281,14 +1281,11 @@ input:hover {
 @media only screen and (max-width: 768px) {
   .contacts_wrapper {
     align-items: baseline;
-  }
-
-  .contacts {
-    padding-left: 20px;
-  }
-
-  .contacts_wrapper {
     padding-left: 0px;
+  }
+
+  .contact_wrapper {
+    padding-left: 20px;
   }
 
   .contact_map {
@@ -1300,11 +1297,7 @@ input:hover {
     margin: 0 auto;
   }
 
-  .about {
-    padding-left: 20px;
-  }
-
-  .favorites {
+  .pick_wrapper {
     padding-left: 20px;
   }
 
@@ -1312,32 +1305,24 @@ input:hover {
     padding-left: 0px;
   }
 
-  .radio_wrapper {
-    padding-left: 0px;
-  }
-
-  .coffeeshop {
-    padding-left: 20px;
-  }
-
   .cs_text {
     padding-left: 0px;
   }
 
+  .cs_text_pi {
+  padding-left: 6px;
+  }
+
   .coffee_menu_wrapper {
-    padding-left: 0px;
+    padding-left: 20px;
   }
 
   .desserts_menu_wrapper {
-    padding-right: 0px;
+    padding-right: 20px;
   }
 
   .cs_menu_title_r {
     padding-right: 5px;
-  }
-
-  .librarycard {
-    padding-left: 20px;
   }
 
   .find_library {
@@ -1368,10 +1353,6 @@ input:hover {
 
   .wrapper {
     padding-bottom: 28px;
-  }
-
-  .col:last-child {
-    padding-right: 5px;
   }
 
 }
