@@ -338,7 +338,7 @@ text-transform: capitalize;
 .radio_wrapper {
   padding-left: 20px;
   padding-top: 40px;
-  width: 700px;
+  max-width: 700px;
   display: flex;
   justify-content: space-between;
 }
@@ -596,7 +596,7 @@ input:hover {
 }
 
 .cs_text {
-  width: 1400px; 
+  max-width: 1400px; 
   padding-left: 20px;
   padding-top: 10px;
   margin: 0;
@@ -738,7 +738,7 @@ input:hover {
 }
 
 .contacts_wrapper {
-  width: 1400px;
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
@@ -1229,6 +1229,26 @@ input:hover {
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  .contacts_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1189px) {
+  .books_line1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .books_line2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .librarycard_wrapper {
     justify-content: center;
@@ -1244,4 +1264,114 @@ input:hover {
   .image_items {
     padding-bottom: 16px;
   }
+
+  .menu_wrapper {
+    flex-direction: column;
+  }
+
+  .cs_menu_item {
+    justify-content: right;
+  }
+
+  .cs_menu_title_r {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contacts_wrapper {
+    align-items: baseline;
+  }
+
+  .contacts {
+    padding-left: 20px;
+  }
+
+  .contacts_wrapper {
+    padding-left: 0px;
+  }
+
+  .contact_map {
+    margin-top: 80px;
+    align-self: center;
+  }
+
+  .map_img  {
+    margin: 0 auto;
+  }
+
+  .about {
+    padding-left: 20px;
+  }
+
+  .favorites {
+    padding-left: 20px;
+  }
+
+  .pick {
+    padding-left: 0px;
+  }
+
+  .radio_wrapper {
+    padding-left: 0px;
+  }
+
+  .coffeeshop {
+    padding-left: 20px;
+  }
+
+  .cs_text {
+    padding-left: 0px;
+  }
+
+  .coffee_menu_wrapper {
+    padding-left: 0px;
+  }
+
+  .desserts_menu_wrapper {
+    padding-right: 0px;
+  }
+
+  .cs_menu_title_r {
+    padding-right: 5px;
+  }
+
+  .librarycard {
+    padding-left: 20px;
+  }
+
+  .find_library {
+    padding-left: 0;
+  }
+
+  .get_reader {
+    align-items: center;
+    padding-right: 0;
+    width: 600px;
+    height: 223px;
+  }
+
+  .get_title {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .get_text {
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  .get_button {
+    padding-top: 0;
+  }
+
+  .wrapper {
+    padding-bottom: 28px;
+  }
+
+  .col:last-child {
+    padding-right: 5px;
+  }
+
 }
