@@ -1298,20 +1298,21 @@ input:hover {
     flex-direction: column;
     align-items: center;
   }
-}
-
-@media only screen and (max-width: 1189px) {
+  
   .books_line1 {
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
+
   .books_line2 {
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
+
 }
+
 
 @media only screen and (max-width: 1100px) {
   .librarycard_wrapper {
@@ -1381,6 +1382,7 @@ input:hover {
 }
 
 @media only screen and (max-width: 1024px) {
+
   .about_text {
     max-width: 728px;
     align-self: center;
@@ -1401,6 +1403,12 @@ input:hover {
   .cs_menu_title_r {
     margin-top: 0px;
   }
+  .map_img  {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1420,6 +1428,8 @@ input:hover {
 
   .map_img  {
     margin: 0 auto;
+    width: 100%;
+    height: 100%;
   }
 
   .pick_wrapper {
@@ -1478,6 +1488,15 @@ input:hover {
 
   .wrapper {
     padding-bottom: 28px;
+  }
+
+}
+
+@media only screen and (max-width: 644px) {
+
+  .book_wrapper {
+    max-width: 590px;
+    width: 570px;
   }
 
 }
