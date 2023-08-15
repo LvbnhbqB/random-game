@@ -1373,6 +1373,10 @@ input:hover {
     margin-bottom: 30px;
   }
 
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+
   .nav-list {
     flex-direction: column;
     text-align: center;
