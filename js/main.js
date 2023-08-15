@@ -28,7 +28,7 @@
            close.classList.remove('header_burger_close_active');
            openItem.classList.remove('header_burger_123');
        }
-    })
+    });
 
     if (window.innerWidth < 1055) {
         for (let i =0; i < menuLinks.length; i += 1) {
