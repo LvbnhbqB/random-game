@@ -72,13 +72,6 @@ const dropMenuProfile = document.querySelector('.menu_profile_no_Auth');
 
 
 
-
-
-
-
-
-
-
 }());
 
 
@@ -285,12 +278,147 @@ const slider = new Swiper('.swiper', {
 
 
 
-  /// открытие-закрытие меню на клик по иконке
+  /// открытие-закрытие меню профиля гостя на клик по иконке
   document.querySelector('.icon_profile_img').onclick = function() {
     document.querySelector('.menu_profile_no_Auth').classList.toggle('menu_profile_no_Auth_active');
   };
 
+   /// открытие меню авторизации на клику в меню
+   document.getElementById('menu_profile_no_Auth_login').onclick = function() {
+    document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+    document.querySelector('.blackout').classList.add('blackout_active');
+    document.querySelector('.menu_profile_no_Auth').classList.toggle('menu_profile_no_Auth_active');
+  }; 
 
+    /// открытие меню авторизации на клику в get reader card
+    document.getElementById('buy_login_in').onclick = function() {
+      event.preventDefault();
+      document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+      document.querySelector('.blackout').classList.add('blackout_active');
+    };  
+
+      /// открытие меню авторизации на buy
+    document.getElementById('buybuy1').onclick = function() {
+      event.preventDefault();
+      document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+      document.querySelector('.blackout').classList.add('blackout_active');
+    };  
+          /// открытие меню авторизации на buy
+          document.getElementById('buybuy2').onclick = function() {
+            event.preventDefault();
+            document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+            document.querySelector('.blackout').classList.add('blackout_active');
+          }; 
+
+              /// открытие меню авторизации на buy
+    document.getElementById('buybuy3').onclick = function() {
+      event.preventDefault();
+      document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+      document.querySelector('.blackout').classList.add('blackout_active');
+    }; 
+
+          /// открытие меню авторизации на buy
+          document.getElementById('buybuy4').onclick = function() {
+            event.preventDefault();
+            document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+            document.querySelector('.blackout').classList.add('blackout_active');
+          }; 
+
+      /// открытие меню авторизации на buy
+      document.getElementById('buybuy5').onclick = function() {
+        event.preventDefault();
+        document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+        document.querySelector('.blackout').classList.add('blackout_active');
+      }; 
+
+            /// открытие меню авторизации на buy
+    document.getElementById('buybuy6').onclick = function() {
+      event.preventDefault();
+      document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+      document.querySelector('.blackout').classList.add('blackout_active');
+    }; 
+
+      /// открытие меню авторизации на buy
+      document.getElementById('buybuy7').onclick = function() {
+        event.preventDefault();
+        document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+        document.querySelector('.blackout').classList.add('blackout_active');
+      }; 
+
+            /// открытие меню авторизации на buy
+    document.getElementById('buybuy8').onclick = function() {
+      event.preventDefault();
+      document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+      document.querySelector('.blackout').classList.add('blackout_active');
+    }; 
+
+          /// открытие меню авторизации на buy
+          document.getElementById('buybuy9').onclick = function() {
+            event.preventDefault();
+            document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+            document.querySelector('.blackout').classList.add('blackout_active');
+          }; 
+
+                /// открытие меню авторизации на buy
+    document.getElementById('buybuy10').onclick = function() {
+      event.preventDefault();
+      document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+      document.querySelector('.blackout').classList.add('blackout_active');
+    }; 
+
+          /// открытие меню авторизации на buy
+          document.getElementById('buybuy11').onclick = function() {
+            event.preventDefault();
+            document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+            document.querySelector('.blackout').classList.add('blackout_active');
+          }; 
+                    /// открытие меню авторизации на buy
+                    document.getElementById('buybuy12').onclick = function() {
+                      event.preventDefault();
+                      document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+                      document.querySelector('.blackout').classList.add('blackout_active');
+                    }; 
+                              /// открытие меню авторизации на buy
+          document.getElementById('buybuy13').onclick = function() {
+            event.preventDefault();
+            document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+            document.querySelector('.blackout').classList.add('blackout_active');
+          }; 
+
+                    /// открытие меню авторизации на buy
+                    document.getElementById('buybuy14').onclick = function() {
+                      event.preventDefault();
+                      document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+                      document.querySelector('.blackout').classList.add('blackout_active');
+                    }; 
+
+                              /// открытие меню авторизации на buy
+          document.getElementById('buybuy15').onclick = function() {
+            event.preventDefault();
+            document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+            document.querySelector('.blackout').classList.add('blackout_active');
+          }; 
+
+                    /// открытие меню авторизации на buy
+                    document.getElementById('buybuy16').onclick = function() {
+                      event.preventDefault();
+                      document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+                      document.querySelector('.blackout').classList.add('blackout_active');
+                    }; 
+
+        /// закрытие формы авторизации на крестик
+    document.getElementById('close_btn').onclick = function() {
+      event.preventDefault();
+      document.querySelector('.modal_Log_In').classList.remove('modal_Log_In_active');
+      document.querySelector('.blackout').classList.remove('blackout_active');
+    };  
+
+        /// закрытие формы авторизации на свободное поле
+    document.getElementById('blackout_close_click').onclick = function() {
+      event.preventDefault();
+      document.querySelector('.modal_Log_In').classList.remove('modal_Log_In_active');
+      document.querySelector('.blackout').classList.remove('blackout_active');
+    }; 
 
 
 
