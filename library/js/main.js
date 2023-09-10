@@ -45,6 +45,40 @@
         }
     //}
 
+
+///// menu_profile_no_Auth start
+
+
+const clickIconProfile = document.querySelector('.icon_profile_img');
+const dropMenuProfile = document.querySelector('.menu_profile_no_Auth');
+   
+  /// открытие-закрытие меню на клик по иконке
+//  dropMenuProfile.classList.toggle('menu_profile_no_Auth_active');
+//  clickIconProfile.addEventListener('click', () => {
+//     });
+
+     // закрытие меню по вне иконки и меню
+    document.addEventListener('click', (e) => {
+      const click = e.composedPath().includes(clickIconProfile);
+      const clickM = e.composedPath().includes(dropMenuProfile);
+     if ( !click && !clickM) {  //если клик не на меню и не на открытие меню то
+     dropMenuProfile.classList.remove('menu_profile_no_Auth_active');
+     //console.log('spam');
+     }
+  }); 
+
+
+///// menu_profile_no_Auth end
+
+
+
+
+
+
+
+
+
+
 }());
 
 
@@ -248,6 +282,17 @@ const slider = new Swiper('.swiper', {
 });
 
 ///about - end
+
+
+
+  /// открытие-закрытие меню на клик по иконке
+  document.querySelector('.icon_profile_img').onclick = function() {
+    document.querySelector('.menu_profile_no_Auth').classList.toggle('menu_profile_no_Auth_active');
+  };
+
+
+
+
 
 
 
