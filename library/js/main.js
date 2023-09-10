@@ -44,6 +44,7 @@
             });
         }
     //}
+
 }());
 
 
@@ -212,4 +213,41 @@
     });
 
 ///favorites - end
+
+
+/// about - start
+
+const slider = new Swiper('.swiper', {
+    simulateTouch: false,
+	breakpoints: {
+		1: {
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			spaceBetween: 25,
+		},
+		1360: {
+			slidesPerView: 3,
+			slidesPerGroup: 1,
+			spaceBetween: 25,
+		}
+	},
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+		clickable: true,
+	},
+
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		bulletActiveClass: 'carousel_pagination_active',
+		bulletClass: 'carousel_pagination',
+		clickable: true,
+	},
+});
+
+///about - end
+
+
 
