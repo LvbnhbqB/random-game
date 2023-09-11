@@ -413,14 +413,55 @@ const slider = new Swiper('.swiper', {
       document.querySelector('.blackout').classList.remove('blackout_active');
     };  
 
-        /// закрытие формы авторизации на свободное поле
+        /// закрытие формы авторизации и регистрации на свободное поле
     document.getElementById('blackout_close_click').onclick = function() {
       event.preventDefault();
       document.querySelector('.modal_Log_In').classList.remove('modal_Log_In_active');
       document.querySelector('.blackout').classList.remove('blackout_active');
+      document.querySelector('.modal_Register').classList.remove('modal_Register_active');
     }; 
 
+                 ///открытие меню авторизации на форме регистрации
+          document.getElementById('reg_to_login').onclick = function() {
+            event.preventDefault();
+            document.querySelector('.modal_Register').classList.remove('modal_Register_active');
+            document.querySelector('.modal_Log_In').classList.add('modal_Log_In_active');
+          }; 
+
+                           ///открытие меню регистрации на форме авторизации
+          document.getElementById('login_to_reg').onclick = function() {
+            event.preventDefault();
+            document.querySelector('.modal_Log_In').classList.remove('modal_Log_In_active');
+            document.querySelector('.modal_Register').classList.add('modal_Register_active');
+          }; 
+
+             /// открытие меню авторизации на клику в меню
+   document.getElementById('menu_profile_no_Auth_register').onclick = function() {
+    document.querySelector('.modal_Register').classList.add('modal_Register_active');
+    document.querySelector('.blackout').classList.add('blackout_active');
+    document.querySelector('.menu_profile_no_Auth').classList.toggle('menu_profile_no_Auth_active');
+  }; 
 
 
+          /// закрытие формы авторизации на крестик
+          document.getElementById('close_btn_r').onclick = function() {
+            event.preventDefault();
+            document.querySelector('.modal_Register').classList.remove('modal_Register_active');
+            document.querySelector('.blackout').classList.remove('blackout_active');
+          };  
+      
+              /// закрытие формы авторизации на свободное поле
+ //         document.getElementById('blackout_close_click').onclick = function() {
+ //           event.preventDefault();
+ //           document.querySelector('.modal_Register').classList.remove('modal_Register_active');
+ //           document.querySelector('.blackout').classList.remove('blackout_active');
+ //         }; 
+
+     /// открытие меню регистрации на клику в get reader card
+     document.getElementById('buy_sign_up').onclick = function() {
+      event.preventDefault();
+      document.querySelector('.modal_Register').classList.add('modal_Register_active');
+      document.querySelector('.blackout').classList.add('blackout_active');
+    };  
 
 
