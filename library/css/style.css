@@ -114,6 +114,11 @@ line-height: normal;
 letter-spacing: 1px;
 text-decoration-line: underline;
 margin-left: 10px;
+cursor: pointer;
+}
+
+.modal_Log_In_end_p:hover {
+  color: #BB945F;
 }
 
 .authorization {
@@ -159,6 +164,47 @@ margin-bottom: 10px;
   left: 58px;
   bottom: 7px;
 }
+
+/* modal_Register In start */
+
+.modal_Register {
+  display: none;
+  width: 250px;
+  height: 382px;
+  background: #FFF;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  z-index: 150;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.modal_Register_active {
+  display: flex;
+}
+
+.modal_Log_In_close_r {
+  position: relative;
+  cursor: pointer;
+  left: 45px;
+  bottom: 7px;
+}
+
+.modal_Log_In_title_r {
+  color: #000;
+  margin-left: 85px;
+font-family: Forum;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 0.4px;
+text-transform: uppercase;
+
+}
+
 
 /* header style start */
 

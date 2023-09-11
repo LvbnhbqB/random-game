@@ -33,9 +33,36 @@
         </div>
         
       </form>
-      <p class="modal_Log_In_end">Don’t have an account?<span class="modal_Log_In_end_p">Register</span>
+      <p class="modal_Log_In_end">Don’t have an account?<span id="login_to_reg" class="modal_Log_In_end_p">Register</span>
       </p>
     </div>
+    <div class="modal_Register">
+      <p class="modal_Log_In_title_r">Register
+        <span class="modal_Log_In_close_r"><img id="close_btn_r" src="./assets/svg/close_btn.svg" alt="close_btn"></span></p>
+        <form class="modal_Log_In_form" action="#">
+          <div class="modal_Log_In_form_field">
+            <label class="modal_Log_In_form_field_t" for="modal_firs_name">First name</label>
+            <input class="authorization" name="modal_firs_name" id="modal_firs_name"  type="text" placeholder="Ivan">
+          </div>
+          <div class="modal_Log_In_form_field">
+            <label class="modal_Log_In_form_field_t" for="modal_last_name">Last name</label>
+            <input class="authorization" name="modal_last_name" id="modal_last_name"  type="text" placeholder="Ivanov">
+          </div>
+          <div class="modal_Log_In_form_field">
+            <label class="modal_Log_In_form_field_t" for="modal_Log_In_e-mail">E-mail</label>
+            <input class="authorization" name="modal_Log_In_e-mail" id="modal_Log_In_e-mail"  type="text" placeholder="email@gmail.com">
+          </div>
+          <div class="modal_Log_In_form_field">
+            <label class="modal_Log_In_form_field_t" for="modal_Log_In_password">Password</label>
+            <input name="modal_Log_In_password" id="modal_Log_In_password" class="authorization last" type="text" placeholder="8characters">
+            <button class="buy" id="btn_login_in">Log in</button>
+          </div>
+          
+        </form>
+        <p class="modal_Log_In_end">Already have an account?<span id="reg_to_login" class="modal_Log_In_end_p">Login</span>
+        </p>
+    </div>
+
 
  
   <header class="header">
