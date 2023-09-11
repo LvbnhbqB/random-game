@@ -413,11 +413,12 @@ const slider = new Swiper('.swiper', {
       document.querySelector('.blackout').classList.remove('blackout_active');
     };  
 
-        /// закрытие формы авторизации на свободное поле
+        /// закрытие формы авторизации и регистрации на свободное поле
     document.getElementById('blackout_close_click').onclick = function() {
       event.preventDefault();
       document.querySelector('.modal_Log_In').classList.remove('modal_Log_In_active');
       document.querySelector('.blackout').classList.remove('blackout_active');
+      document.querySelector('.modal_Register').classList.remove('modal_Register_active');
     }; 
 
                  ///открытие меню авторизации на форме регистрации
@@ -450,11 +451,17 @@ const slider = new Swiper('.swiper', {
           };  
       
               /// закрытие формы авторизации на свободное поле
-          document.getElementById('blackout_close_click').onclick = function() {
-            event.preventDefault();
-            document.querySelector('.modal_Register').classList.remove('modal_Register_active');
-            document.querySelector('.blackout').classList.remove('blackout_active');
-          }; 
+ //         document.getElementById('blackout_close_click').onclick = function() {
+ //           event.preventDefault();
+ //           document.querySelector('.modal_Register').classList.remove('modal_Register_active');
+ //           document.querySelector('.blackout').classList.remove('blackout_active');
+ //         }; 
 
+     /// открытие меню регистрации на клику в get reader card
+     document.getElementById('buy_sign_up').onclick = function() {
+      event.preventDefault();
+      document.querySelector('.modal_Register').classList.add('modal_Register_active');
+      document.querySelector('.blackout').classList.add('blackout_active');
+    };  
 
 
