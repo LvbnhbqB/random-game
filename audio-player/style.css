@@ -1,0 +1,40 @@
+
+
+
+/*footer start */
+.footer {
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  color: #fff;
+  overflow: hidden;
+}
+
+.footer-container {
+  width: 100%;
+}
+
+.img-footer {
+  width: 100%;
+  height: 40px;
+}
+
+.text-footer {
+  color: black;
+}
+
+.row-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 10px 10px 10px;
+}
+
+.col-footer { 
+
+  align-content: center;
+}
+
+/*footer start */
