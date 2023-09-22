@@ -12,7 +12,7 @@ const progress = document.querySelector('.progress');
 
 
 const trackList = ['Alphaville - Big in Japan', 'Europe - The Final Countdown'];
-let trackIndex = 1;
+let trackIndex = 0;
 
 function loadTrack(track) {
   title.textContent = `${track}`
@@ -67,4 +67,23 @@ function prevTrack() {
 
 prevBtn.addEventListener('click', prevTrack)
 nextBtn.addEventListener('click', nextTrack)
+
+function progressTrack(e){
+  const duration = audio.duration
+  const currentTime = audio.currentTime
+  const progressPercent = (currentTime / duration) * 100
+  progress.style.width = `${progressPercent}%`
+}
+
+function rewindTrack(e) {
+  const width = this.clientWidth
+  const clickX = e.offsetX
+  const duration = audio.duration
+  audio.currentTime = (clickX / width) * duration
+  playTrack()
+
+}
+
+audio.addEventListener('timeupdate', progressTrack)
+progressWrap.addEventListener('click', rewindTrack)
 
