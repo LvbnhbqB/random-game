@@ -184,8 +184,11 @@ body {
 }
 
 .col-footer { 
-
   align-content: center;
+}
+
+.col-footer:first-child {
+  margin-right: 70px;
 }
 
 /*footer start */
