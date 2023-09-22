@@ -1,16 +1,49 @@
-const playBtn = document.querySelector('.play-btn');
-const pauseBtn = document.querySelector('.pause-btn');
-const audio = new Audio();
+const player = document.querySelector('.player-wrapper')
+const cover = document.querySelector('.cover');
+const audio = document.querySelector('.audio');
+const preview = document.querySelector('.preview');
+const title = document.querySelector('.player-title');
+const playPause = document.getElementById('play-pause');
+const playBtn = document.querySelector('.play');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+const progressWrap = document.querySelector('.progress-wrapper');
+const progress = document.querySelector('.progress');
 
-function playAudio() {
-  audio.src = '../audio-player/assets/media/Alphaville-Big _in_Japan.mp3';
-  audio.currentTime = 0;
-  audio.play();
+
+const trackList = ['Alphaville - Big in Japan', 'Europe - The Final Countdown'];
+let trackIndex = 1;
+
+function loadTrack(track) {
+  title.textContent = `${track}`
+  audio.src = `assets/media/${track}.mp3`
+  cover.src = `assets/cover/cover${trackIndex + 1}.jpg`
+  preview.src = `assets/cover/cover${trackIndex + 1}.jpg`
+
 }
 
-function pauseAudio() {
-  audio.pause();
+loadTrack(trackList[trackIndex])
+
+function playTrack() {
+  player.classList.add('activePlay')
+  audio.play()
+  playPause.src = `assets/icon/icons8-pause-button-64.svg`
 }
 
-playBtn.addEventListener('click', playAudio);
-pauseBtn.addEventListener('click', pauseAudio);
+function pauseTrack() {
+  player.classList.remove('activePlay')
+  audio.pause()
+  playPause.src = `assets/icon/icons8-circled-play-64.svg`
+}
+
+playBtn.addEventListener('click', () => {
+  const isPlay = player.classList.contains('activePlay')
+ console.log(isPlay)
+  if (isPlay) {
+    pauseTrack()
+  } else {
+   playTrack()
+  }
+
+})
+

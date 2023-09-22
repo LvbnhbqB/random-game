@@ -33,15 +33,19 @@ body {
 }
 
 
-.cover-1 {
-  background-image: url(../audio-player/assets/cover/Alphaville_-_Big_in_Japan_Cover.jpg);
+
+.player-title {
+  color: #fff;
+}
+
+.cover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .cover-2 {
-  background-image: url(../audio-player/assets/cover/Europe-the_final_countdown.jpg);
+  background-image: url(../audio-player/assets/cover/cover2jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -66,11 +70,12 @@ body {
   height: 400px;
 }
 
-.preview-1 {
-  background-image: url(../audio-player/assets/cover/Alphaville_-_Big_in_Japan_Cover.jpg);
+.preview {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  width: 400px;
+  height: 100%;
 }
 
 
@@ -80,13 +85,54 @@ body {
   background-color: #00000085;
 }
 
+.button-control {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* align-content: center; */
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+
+.btn {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.progress-wrapper {
+  width: 380px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.progress {
+  width: 300px;
+  height: 19px;
+  border-radius: 5px;
+  background-color: blue;
+
+}
+
+
+
+
+
+
+
 /*footer start */
 .footer {
   padding: 0;
   text-align: center;
   width: 100%;
   color: #fff;
-  overflow: hidden;
   background-color: rgba(6, 18, 18, 0.184);
 }
 
