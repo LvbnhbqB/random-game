@@ -153,7 +153,10 @@ body {
 }
 
 .text-footer {
-  color: black;
+  color: #c7c4c4;
+  font-family:'CroissantOne-Regular';
+  font-size: 16px;
+
 }
 
 .row-footer {
