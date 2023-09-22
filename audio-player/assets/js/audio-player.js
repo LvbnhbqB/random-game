@@ -37,7 +37,6 @@ function pauseTrack() {
 
 playBtn.addEventListener('click', () => {
   const isPlay = player.classList.contains('activePlay')
- console.log(isPlay)
   if (isPlay) {
     pauseTrack()
   } else {
@@ -50,7 +49,6 @@ function nextTrack() {
   if (trackIndex > trackList.length - 1) {
     trackIndex = 0
   }
-
   loadTrack(trackList[trackIndex])
   playTrack()
 }
@@ -60,7 +58,6 @@ function prevTrack() {
   if (trackIndex < 0) {
     trackIndex = trackList.length - 1
   }
-
   loadTrack(trackList[trackIndex])
   playTrack()
 }
@@ -81,9 +78,8 @@ function rewindTrack(e) {
   const duration = audio.duration
   audio.currentTime = (clickX / width) * duration
   playTrack()
-
 }
 
 audio.addEventListener('timeupdate', progressTrack)
 progressWrap.addEventListener('click', rewindTrack)
-
+audio.addEventListener('ended', nextTrack)
