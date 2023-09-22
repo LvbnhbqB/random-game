@@ -32,6 +32,10 @@ body {
   flex-direction: column-reverse;
 }
 
+.preview-wrapper {
+  width: 400px;
+  height: 400px;
+}
 
 
 .player-title {

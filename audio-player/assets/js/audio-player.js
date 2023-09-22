@@ -19,7 +19,6 @@ function loadTrack(track) {
   audio.src = `assets/media/${track}.mp3`
   cover.src = `assets/cover/cover${trackIndex + 1}.jpg`
   preview.src = `assets/cover/cover${trackIndex + 1}.jpg`
-
 }
 
 loadTrack(trackList[trackIndex])
@@ -44,6 +43,28 @@ playBtn.addEventListener('click', () => {
   } else {
    playTrack()
   }
-
 })
+
+function nextTrack() {
+  trackIndex ++
+  if (trackIndex > trackList.length - 1) {
+    trackIndex = 0
+  }
+
+  loadTrack(trackList[trackIndex])
+  playTrack()
+}
+
+function prevTrack() {
+  trackIndex --
+  if (trackIndex < 0) {
+    trackIndex = trackList.length - 1
+  }
+
+  loadTrack(trackList[trackIndex])
+  playTrack()
+}
+
+prevBtn.addEventListener('click', prevTrack)
+nextBtn.addEventListener('click', nextTrack)
 
