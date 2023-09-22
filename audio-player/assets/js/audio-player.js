@@ -26,13 +26,13 @@ loadTrack(trackList[trackIndex])
 function playTrack() {
   player.classList.add('activePlay')
   audio.play()
-  playPause.src = `assets/icon/icons8-pause-button-64.svg`
+  playPause.src = `assets/icon/icons8-pause-50.svg`
 }
 
 function pauseTrack() {
   player.classList.remove('activePlay')
   audio.pause()
-  playPause.src = `assets/icon/icons8-circled-play-64.svg`
+  playPause.src = `assets/icon/icons8-play-50.svg`
 }
 
 playBtn.addEventListener('click', () => {
