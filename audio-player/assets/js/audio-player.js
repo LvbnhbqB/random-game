@@ -9,9 +9,11 @@ const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
 const progressWrap = document.querySelector('.progress-wrapper');
 const progress = document.querySelector('.progress');
-
+const durationTitle = document.querySelector('.duration')
+const currentTimeTitle = document.querySelector('.currentTime')
 
 const trackList = ['Alphaville - Big in Japan', 'Europe - The Final Countdown'];
+const trackTime = ['3:52', '3:59'];
 let trackIndex = 0;
 
 function loadTrack(track) {
@@ -19,6 +21,10 @@ function loadTrack(track) {
   audio.src = `assets/media/${track}.mp3`
   cover.src = `assets/cover/cover${trackIndex + 1}.jpg`
   preview.src = `assets/cover/cover${trackIndex + 1}.jpg`
+  durationTitle.classList.remove('play_on');
+  currentTimeTitle.classList.remove('play_on');
+  durationTitle.classList.add('play_off');
+  currentTimeTitle.classList.add('play_off');
 }
 
 loadTrack(trackList[trackIndex])
@@ -27,12 +33,18 @@ function playTrack() {
   player.classList.add('activePlay')
   audio.play()
   playPause.src = `./assets/icon/icons8-pause-50.svg`
+  durationTitle.classList.add('play_on');
+  currentTimeTitle.classList.add('play_on');
+  durationTitle.classList.remove('play_off');
+  currentTimeTitle.classList.remove('play_off');
 }
 
 function pauseTrack() {
   player.classList.remove('activePlay')
   audio.pause()
   playPause.src = `./assets/icon/icons8-play-50.svg`
+  durationTitle.classList.add('play_on');
+  currentTimeTitle.classList.add('play_on');
 }
 
 playBtn.addEventListener('click', () => {
@@ -49,6 +61,8 @@ function nextTrack() {
   if (trackIndex > trackList.length - 1) {
     trackIndex = 0
   }
+  durationTitle.classList.add('play_off');
+  currentTimeTitle.classList.add('play_off');
   loadTrack(trackList[trackIndex])
   playTrack()
 }
@@ -58,8 +72,20 @@ function prevTrack() {
   if (trackIndex < 0) {
     trackIndex = trackList.length - 1
   }
+  durationTitle.classList.add('play_off');
+  currentTimeTitle.classList.add('play_off');
   loadTrack(trackList[trackIndex])
   playTrack()
+}
+
+function audioTime(time) {
+  const minutes = Math.floor(time / 60);
+  const seconds = Math.floor(time - (minutes * 60));
+  if (seconds < 10) {
+    return `${minutes}:0${seconds}`
+  } else {
+    return `${minutes}:${seconds}`
+  }
 }
 
 prevBtn.addEventListener('click', prevTrack)
@@ -70,6 +96,8 @@ function progressTrack(e){
   const currentTime = audio.currentTime
   const progressPercent = (currentTime / duration) * 100
   progress.style.width = `${progressPercent}%`
+  currentTimeTitle.textContent = audioTime(audio.currentTime)
+  durationTitle.textContent = audioTime(audio.duration)
 }
 
 function rewindTrack(e) {
@@ -83,3 +111,4 @@ function rewindTrack(e) {
 audio.addEventListener('timeupdate', progressTrack)
 progressWrap.addEventListener('click', rewindTrack)
 audio.addEventListener('ended', nextTrack)
+

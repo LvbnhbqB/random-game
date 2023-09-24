@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "CroissantOne-Regular"; 
+  src: url("./assets/fonts/CroissantOne-Regular.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
+
 body {
   display: flex;
   flex-direction: column;
@@ -82,6 +89,36 @@ body {
   background-size: cover;
   width: 400px;
   height: 100%;
+}
+
+
+.audio-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.audio-time {
+  height: 12px;
+}
+
+.duration {
+  color: #c7c4c4;
+  font-size: 12px;
+  display: none;
+}
+
+.currentTime {
+  color: #c7c4c4;
+  font-size: 12px;
+  display: none;
+}
+
+.play_on {
+  display: block;
+}
+
+.play_off {
+  display: none;
 }
 
 .control-wrapper {
@@ -191,11 +228,5 @@ body {
   margin-right: 70px;
 }
 
-/*footer start */
+/*footer end */
 
-@font-face {
-  font-family: "CroissantOne-Regular"; 
-  src: url("./assets/fonts/CroissantOne-Regular.ttf"); 
-  font-style: normal; 
-  font-weight: normal; 
-  } 
