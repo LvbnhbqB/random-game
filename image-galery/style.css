@@ -1,0 +1,50 @@
+/*footer start */
+.footer {
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background-color: rgba(6, 18, 18, 0.184);
+}
+
+.footer-container {
+  width: 100%;
+}
+
+.img-footer {
+  width: 100%;
+  height: 40px;
+}
+
+.img-footer:hover {
+  opacity: 0.4;
+}
+
+.img-footer:active {
+  opacity: 0.2;
+}
+
+.text-footer {
+  color: #c7c4c4;
+  font-family:'CroissantOne-Regular';
+  font-size: 16px;
+
+}
+
+.row-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 10px 10px 10px;
+}
+
+.col-footer { 
+  align-content: center;
+}
+
+.col-footer:first-child {
+  margin-right: 70px;
+}
+
+/*footer end */
