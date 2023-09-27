@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
   <meta name="description" content="js30#2.2-image-galery">
   <meta name="author" content="LvbnhbqB">
   <title>js30#2.2-image-galery</title>
 </head>
+
 <body>
-<div class="container">
+  <div class="container">
     <header class="header">
       <div class="header-container">
         <div class="header-logo">
@@ -19,7 +24,13 @@
           <h1 class="title">Unsplash API</h1>
         </div>
         <div class="header-search">
-          поиск
+          <form id="search">
+            <input id='text' type="text" name="text" class="search" value="Japan" placeholder="Search..."
+              autocomplete="off" autofocus onfocus="this.value=''">
+            <button id="submit" type="submit" name="submit" class="submit" value="Search"><img class="submit-btn"
+                src="./assets/icons8-search.svg" alt="button"> </button>
+            <button id="clearButton" class="clear-btn">x</button>
+          </form>
         </div>
       </div>
     </header>
@@ -32,19 +43,23 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="row-footer">
-            <div class="col-footer">
-                <a href="https://github.com/LvbnhbqB" title="GitHub for LvbnhbqB" target="_blank"><img class="img-footer" src="./assets/image-footer/Github_icon-icons.com_67091.svg" alt="github logo"></a>
-            </div>
-            <div class="col-footer">
-                <p class="text-footer" >© 2023</p>
-            </div>
-            <div class="col-footer">
-                <a href="https://rs.school/js-stage0/" title="Visit to RSSCHOOL site" target="_blank"><img class="img-footer" src="./assets/image-footer/rs_school.svg" alt="rsschool logo"></a>
-            </div>
+          <div class="col-footer">
+            <a href="https://github.com/LvbnhbqB" title="GitHub for LvbnhbqB" target="_blank"><img class="img-footer"
+                src="./assets/image-footer/Github_icon-icons.com_67091.svg" alt="github logo"></a>
+          </div>
+          <div class="col-footer">
+            <p class="text-footer">© 2023</p>
+          </div>
+          <div class="col-footer">
+            <a href="https://rs.school/js-stage0/" title="Visit to RSSCHOOL site" target="_blank"><img
+                class="img-footer" src="./assets/image-footer/rs_school.svg" alt="rsschool logo"></a>
+          </div>
         </div>
-    </div>
-  </footer>   
-</div>
+      </div>
+    </footer>
+  </div>
   <script src="./api.js"></script>
+  <script src="./task.js"></script>
 </body>
+
 </html>
