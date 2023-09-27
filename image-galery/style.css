@@ -28,6 +28,22 @@ body {
 
 /*header end */
 
+.image-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* justify-items: center; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.gallery-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
 
 
 /*footer start */
