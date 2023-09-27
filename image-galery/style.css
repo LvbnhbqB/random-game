@@ -13,6 +13,11 @@ body {
   background-color: rgb(218, 218, 218);
 }
 
+.main {
+  max-width: 1905px;
+  margin: 0 auto;
+}
+
 /*header start */
 
 .header {
