@@ -7,7 +7,6 @@ let perPage = 12;
 async function getData(keySearch, perPage) {
   const url = `https://api.unsplash.com/search/photos?query=${keySearch}&client_id=c-pyLMHmHbLDMvbGqKLj-z4rfkORfC5gkRvCvFPNzW4&per_page=${perPage}`;
   const res = await fetch(url);
-  console.log("dssdsdsd", url.status);
   const data = await res.json();
   //console.log('keySearch: ', keySearch);
   // console.log('res: ', res);
