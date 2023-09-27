@@ -43,6 +43,11 @@ body {
   width: 400px;
   height: 400px;
   object-fit: cover;
+  transition: .5s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.2);
 }
 
 
