@@ -43,3 +43,6 @@ formElement.addEventListener('submit', (e) => {
   let keySearch = request;
   getData(keySearch, perPage)
 });
+
+
+document.getElementById("text").focus();
