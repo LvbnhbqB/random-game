@@ -1,18 +1,24 @@
 let keySearch = 'Nizhny Novgorod';
 let perPage = 12;
 
+//c-pyLMHmHbLDMvbGqKLj-z4rfkORfC5gkRvCvFPNzW4
+
 async function getData(keySearch, perPage) {
   const url = `https://api.unsplash.com/search/photos?query=${keySearch}&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo&per_page=${perPage}`;
   const res = await fetch(url);
+  console.log('dssdsdsd', url.status);
   const data = await res.json();
   //console.log('keySearch: ', keySearch);
-  //console.log('res: ', res);
+  console.log('res: ', res);
+  console.log(res.status);
+  console.log('mdaaa sosss')
   //console.log('data: ', data);
   //console.log('urls: ', data.results[0].urls.regular);
   //console.log('dlina: ', data.results.length)
   document.querySelector('.image-container').innerHTML = '';
   showData(data)
 }
+
 getData(keySearch, perPage);
 
 function showData(data) {
