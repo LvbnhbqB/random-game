@@ -13,10 +13,6 @@ body {
   background-color: rgb(218, 218, 218);
 }
 
-.container {
-
-}
-
 /*header start */
 
 .header {
@@ -110,7 +106,6 @@ body {
   color: #fff;
   font-family:'CroissantOne-Regular';
   font-size: 18px;
-
 }
 
 .row-footer {
