@@ -104,10 +104,16 @@ body {
   height: 400px;
   object-fit: cover;
   transition: .5s;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.5);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.5);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.5);
 }
 
 .gallery-img:hover {
   transform: scale(1.2);
+  -webkit-box-shadow: 4px 4px 100px 91px rgba(34, 60, 80, 0.5);
+  -moz-box-shadow: 4px 4px 100px 91px rgba(34, 60, 80, 0.5);
+  box-shadow: 4px 4px 100px 91px rgba(34, 60, 80, 0.5);
 }
 
 
@@ -158,11 +164,11 @@ body {
 
 .col-footer:first-child {
   margin-right: 70px;
-  margin-left: 6%;
+  margin-left: 20px;
 }
 
 .col-footer:last-child {
-  margin-right: 6%;
+  margin-right: 20px;
 }
 
 /*footer end */
