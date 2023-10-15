@@ -10,16 +10,24 @@ let countPlayer = 0, countPc = 0;
 
 
 function playPlayer(e) {
-console.log('eee');
+  playPC();
   let target = e.target;
   let player;
   player = target.dataset.choice;
-  console.log(player);
-  console.log(target);
 }
 
 function playPC() {
-
+  let pc;
+  let randomPC=Math.floor(Math.random() * 3);
+  if (randomPC === 0) {
+    pc = 'rock';
+  }
+  if (randomPC === 1) {
+    pc = 'papper';
+  }
+  if (randomPC === 2) {
+    pc = 'scissors';
+  }
 }
 
 function win(){
