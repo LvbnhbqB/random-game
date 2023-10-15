@@ -5,6 +5,7 @@ let pcScore = document.querySelector('.pc-score');
 let playerChoice = document.querySelector('.player-choice');
 let pcChoice = document.querySelector('.pc-choice');
 let buttons = document.querySelectorAll('.choice');
+let winnerText;
 let countPlayer = 0, countPc = 0;
 let player, pc;
 
@@ -36,12 +37,15 @@ function win(e){
   console.log('win');
   if (player === pc) {
     console.log(':(');
+    winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'Ничья';
   } else if (((player === 'rock') && (pc === 'scissors')) || ((player === 'scissors') && (pc === 'papper')) || ((player === 'papper') && (pc === 'scissors'))) {
     console.log('player winner!');
+    winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'player winner!';
   } else {
     console.log('pc winner!')
-  }
+    winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'pc winner!';
 
+  }
 }
 
 playerChoice.addEventListener('click', win);

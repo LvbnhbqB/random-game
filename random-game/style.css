@@ -68,7 +68,7 @@ body {
   height: 1000px;
   background-color: aqua;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
@@ -76,19 +76,35 @@ body {
   gap: 40px;
 }
 
+.player-wrapper {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
 
 .choice {
   width: 100px;
   height: 100px;
-}
-
-.choice:hover {
   opacity: .5;
 }
 
+.choice-pc {
+  width: 100px;
+  height: 100px;
+  opacity: .5;
+}
+
+.choice:hover {
+  opacity: .8;
+}
+
 .choice:active {
-  opacity: .1;
+  opacity: 1;
 }
 
 
