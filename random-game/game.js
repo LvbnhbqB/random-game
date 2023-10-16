@@ -59,7 +59,7 @@ function win(e){
   playPC();
   if (player === pc) {
     winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'GAME DRAW :(';
-  } else if (((player === 'rock') && (pc === 'scissors')) || ((player === 'scissors') && (pc === 'papper')) || ((player === 'papper') && (pc === 'scissors'))) {
+  } else if (((player === 'rock') && (pc === 'scissors')) || ((player === 'scissors') && (pc === 'papper')) || ((player === 'papper') && (pc === 'rock'))) {
     winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'PLAYER WIN!!!';
     countPlayer++;
     document.getElementsByClassName('player-score')[0].textContent = countPlayer;
