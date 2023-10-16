@@ -41,9 +41,13 @@ function win(e){
   } else if (((player === 'rock') && (pc === 'scissors')) || ((player === 'scissors') && (pc === 'papper')) || ((player === 'papper') && (pc === 'scissors'))) {
     console.log('player winner!');
     winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'PLAYER WIN!!!';
+    countPlayer++;
+    document.getElementsByClassName('player-score')[0].textContent = countPlayer;
   } else {
     console.log('pc winner!')
     winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'COMPUTER WIN!!!';
+    countPc++;
+    document.getElementsByClassName('pc-score')[0].textContent = countPc;
   }
 }
 
