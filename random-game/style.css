@@ -120,6 +120,10 @@ body {
   opacity: 1;
 }
 
+.active-pc {
+  opacity: 1;
+}
+
 
 .button1:active {
   opacity: .2;
