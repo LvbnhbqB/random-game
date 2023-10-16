@@ -37,14 +37,13 @@ function win(e){
   console.log('win');
   if (player === pc) {
     console.log(':(');
-    winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'Ничья';
+    winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'GAME DRAW :(';
   } else if (((player === 'rock') && (pc === 'scissors')) || ((player === 'scissors') && (pc === 'papper')) || ((player === 'papper') && (pc === 'scissors'))) {
     console.log('player winner!');
-    winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'player winner!';
+    winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'PLAYER WIN!!!';
   } else {
     console.log('pc winner!')
-    winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'pc winner!';
-
+    winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'COMPUTER WIN!!!';
   }
 }
 

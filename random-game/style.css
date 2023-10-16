@@ -4,13 +4,21 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Pixelify Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/PixelifySans-VariableFont_wght.ttf)
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
-  background-color: rgb(153, 75, 163);
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main {
@@ -25,13 +33,12 @@ body {
 /*header start */
 
 .header {
-  position: sticky;
   top: 0;
 }
 
 .header-container {
   height: 64px;
-  background-color: rgba(6, 18, 18, 0.184);
+  background-color: rgb(202 214 214 / 58%);
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -56,7 +63,10 @@ body {
 }
 
 .title {
-  color: #fff;
+  color: #df1b1bd1;
+  font-family: Pixelify Sans;
+  font-size: 30pt;
+  -webkit-text-stroke: 1px #FFFFFF; 
 }
 
 /*header end */
@@ -66,7 +76,6 @@ body {
 .main-container {
   width: 1000px;
   height: 1000px;
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -74,6 +83,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  color: #fff;
+  background-color: rgb(202 214 214 / 58%);
 }
 
 .player-wrapper {
@@ -91,12 +102,14 @@ body {
   width: 100px;
   height: 100px;
   opacity: .5;
+  border-radius: 20px;
 }
 
 .choice-pc {
   width: 100px;
   height: 100px;
   opacity: .5;
+  border-radius: 20px;
 }
 
 .choice:hover {
@@ -112,10 +125,6 @@ body {
   opacity: .2;
 }
 
-.choice-image {
-  width: 100%;
-  height: 100%;
-}
 
 .rock {
   background-image: url(./assets/rock.png);
@@ -132,14 +141,62 @@ body {
   background-size: cover;
 }
 
+.winner-text {
+  color: #62df1b;
+  font-family: Pixelify Sans;
+  font-size: 60pt;
+  -webkit-text-stroke: 1px #2121ca; 
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.player{
+  background-image: url(./assets/avatar-player.png);
+
+}
+
+.pc{
+  background-image: url(./assets/avatar-pc.png);
+}
+
+.player-zona {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
 
+.player-name {
+  color: #222222d1;
+  font-family: Pixelify Sans;
+  font-size: 46pt;
+  -webkit-text-stroke: 1px #FFFFFF; 
+}
+
+.player-score {
+  color: #222222d1;
+  font-family: Pixelify Sans;
+  font-size: 80pt;
+  -webkit-text-stroke: 1px #FFFFFF; 
+}
+
+.pc-score {
+  color: #222222d1;
+  font-family: Pixelify Sans;
+  font-size: 80pt;
+  -webkit-text-stroke: 1px #FFFFFF; 
+}
 
 
-
-
-
-/*main start*/
+/*main end*/
 
 /*footer start */
 .footer {
@@ -147,7 +204,7 @@ body {
   text-align: center;
   width: 100%;
   color: #fff;
-  background-color: rgba(6, 18, 18, 0.184);
+  background-color: rgb(202 214 214 / 58%);
   margin-top: 20px;
 }
 
