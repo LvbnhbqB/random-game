@@ -114,9 +114,14 @@ body {
 
 .choice:hover {
   opacity: .8;
+  cursor: pointer;
 }
 
 .choice:active {
+  opacity: 1;
+}
+
+.active-pc {
   opacity: 1;
 }
 
