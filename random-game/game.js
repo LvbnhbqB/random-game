@@ -55,18 +55,29 @@ function playPC() {
 }
 
 function win(e){
+  const audio = new Audio();
   playPlayer(e);
   playPC();
   if (player === pc) {
     winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'GAME DRAW :(';
+    audio.src = './assets/media/oops.mp3'
+    audio.currentTime = 0;
+    audio.play();
   } else if (((player === 'rock') && (pc === 'scissors')) || ((player === 'scissors') && (pc === 'papper')) || ((player === 'papper') && (pc === 'rock'))) {
     winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'PLAYER WIN!!!';
     countPlayer++;
     document.getElementsByClassName('player-score')[0].textContent = countPlayer;
+    audio.src = './assets/media/win.mp3'
+    audio.currentTime = 0;
+    audio.play();
+
   } else {
     winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'COMPUTER WIN!!!';
     countPc++;
     document.getElementsByClassName('pc-score')[0].textContent = countPc;
+    audio.src = './assets/media/loser.mp3'
+    audio.currentTime = 0;
+    audio.play();
   }
 }
 
