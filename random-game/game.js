@@ -17,7 +17,6 @@ let player, pc;
 function playPlayer(e) {
   let target = e.target;
   player = target.dataset.choice;
-  console.log('player');
 }
 
 function playPC() {
@@ -27,36 +26,44 @@ function playPC() {
     buttonsPcR.classList.add('active-pc')
     buttonsPcP.classList.remove('active-pc')
     buttonsPcS.classList.remove('active-pc')
+    setTimeout(() => {
+      buttonsPcR.classList.remove('active-pc')
+      winnerText = document.getElementsByClassName('winner-text')[0].textContent = "Who's the winner?";
+    }, 1000);
   }
   if (randomPC === 1) {
     pc = 'papper';
     buttonsPcP.classList.add('active-pc')
     buttonsPcR.classList.remove('active-pc')
     buttonsPcS.classList.remove('active-pc')
+    setTimeout(() => {
+      buttonsPcP.classList.remove('active-pc')
+      winnerText = document.getElementsByClassName('winner-text')[0].textContent = "Who's the winner?";
+    }, 1000);
   }
   if (randomPC === 2) {
     pc = 'scissors';
     buttonsPcS.classList.add('active-pc')
     buttonsPcP.classList.remove('active-pc')
     buttonsPcR.classList.remove('active-pc')
+
+    setTimeout(() => {
+      buttonsPcS.classList.remove('active-pc')
+      winnerText = document.getElementsByClassName('winner-text')[0].textContent = "Who's the winner?";
+    }, 1000);
   }
-  console.log('pc');
 }
 
 function win(e){
   playPlayer(e);
   playPC();
-  console.log('win');
   if (player === pc) {
-    console.log(':(');
     winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'GAME DRAW :(';
   } else if (((player === 'rock') && (pc === 'scissors')) || ((player === 'scissors') && (pc === 'papper')) || ((player === 'papper') && (pc === 'scissors'))) {
-    console.log('player winner!');
     winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'PLAYER WIN!!!';
     countPlayer++;
     document.getElementsByClassName('player-score')[0].textContent = countPlayer;
   } else {
-    console.log('pc winner!')
     winnerText = document.getElementsByClassName('winner-text')[0].textContent = 'COMPUTER WIN!!!';
     countPc++;
     document.getElementsByClassName('pc-score')[0].textContent = countPc;
@@ -64,5 +71,3 @@ function win(e){
 }
 
 playerChoice.addEventListener('click', win);
-
-console.log(countPlayer);

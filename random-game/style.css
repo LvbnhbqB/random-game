@@ -114,6 +114,7 @@ body {
 
 .choice:hover {
   opacity: .8;
+  cursor: pointer;
 }
 
 .choice:active {
