@@ -203,6 +203,31 @@ box-shadow: 4px 4px 8px 6px rgba(34, 60, 80, 0.2);
   -webkit-text-stroke: 1px #FFFFFF; 
 }
 
+.win-image {
+  background-image: url(./assets/winner.png);
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  top: 80px;
+  left: 140px;
+  display: none;
+}
+
+.win-image-player {
+  background-image: url(./assets/winner.png);
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  top: 80px;
+  right: 60px;
+  display: none;
+}
+
+.win-active {
+  display: block;
+}
 
 /*main end*/
 
