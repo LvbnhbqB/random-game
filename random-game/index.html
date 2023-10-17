@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
   <meta name="description" content="js30#3.3-random-game">
   <meta name="author" content="LvbnhbqB">
   <title>js30#3.3-random-game</title>
@@ -29,29 +29,33 @@
       <div class="main-container">
         <div class="winner-text">Who's the winner?</div>
         <div class="player-wrapper">
-        <div class="player-zona">
-          <div class="avatar player"><div id="avatar-player-win" class="win-image-player"></div></div>
-          <div class="player-name">YOU</div>
+          <div class="player-zona">
+            <div class="avatar player">
+              <div id="avatar-player-win" class="win-image-player"></div>
+            </div>
+            <div class="player-name">YOU</div>
 
-          <div class="player-score">0</div>
-          <div class="player-choice">
-            <button class="choice rock" data-choice="rock"></button>
-            <button class="choice scissors" data-choice="scissors"></button>
-            <button class="choice papper" data-choice="papper"></button>
- 
+            <div class="player-score">0</div>
+            <div class="player-choice">
+              <button class="choice rock" data-choice="rock"></button>
+              <button class="choice scissors" data-choice="scissors"></button>
+              <button class="choice papper" data-choice="papper"></button>
+
+            </div>
+          </div>
+          <div class="player-zona">
+            <div class="avatar pc">
+              <div id="avatar-pc-win" class="win-image"></div>
+            </div>
+            <div class="player-name">COMPUTER</div>
+            <div class="pc-score">0</div>
+            <div class="pc-choice">
+              <button id="pc-r" class="choice-pc rock" data-choice="rock" disabled></button>
+              <button id="pc-s" class="choice-pc scissors" data-choice="scissors" disabled></button>
+              <button id="pc-p" class="choice-pc papper" data-choice="papper" disabled></button>
+            </div>
           </div>
         </div>
-        <div class="player-zona">
-          <div class="avatar pc"><div id="avatar-pc-win" class="win-image"></div></div>
-          <div class="player-name">COMPUTER</div>
-          <div class="pc-score">0</div>
-          <div class="pc-choice">
-            <button id="pc-r" class="choice-pc rock" data-choice="rock" disabled></button>
-            <button id="pc-s" class="choice-pc scissors" data-choice="scissors" disabled></button>
-            <button id="pc-p" class="choice-pc papper" data-choice="papper" disabled></button>
-          </div>
-        </div>
-      </div>
       </div>
 
     </main>
